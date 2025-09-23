@@ -28,4 +28,19 @@ int main(){
         scanf("%d", &territorios[i].tropas);
     }
 
+        while (getchar () != 'n'); // Limpeza de buffer
+
+    // Exibindo os detalhes dos territórios
+
+printf("=== Detalhes dos territórios cadastrados ===\n\n");
+
+for (int i = 0; i < 5; i++) {
+    printf("Território %d:\n\n", i + 1);
+    printf("Nome: %s\n", territorios[i].nome);
+    printf("Cor: %s\n", territorios[i].cor);
+    printf("Quantidade de tropas: %d\n\n", territorios[i].tropas);
+}
+
+return 0;
+
 }
