@@ -9,6 +9,14 @@ typedef struct{
     int tropas;
 } Territorio;
 
+// Declarando Funções
+
+void cadastrarTerritorios(Territorio* territorios, int quantidade);
+void exibirTerritorios(Territorio* territorios, int quantidade);
+void atacar(Territorio* atacante, Territorio* defensor);
+void liberarMemoria(Territorio* territorios);
+int validarAtaque(Territorio* atacante, Territorio* defensor);
+
 int main() {
 
     printf("=== Seja muito bem-vindo(a) ao jogo de estratégia War! ===\n\n");
